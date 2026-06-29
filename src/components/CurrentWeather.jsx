@@ -41,10 +41,10 @@ export default function CurrentWeather({ weather, unit, glowColor, theme, localT
           />
           <WeatherIcon icon={weather.weather[0].icon} size={100} />
         </div>
-        <span className={`text-5xl sm:text-7xl font-bold ${tc}`}>{temp}{deg}</span>
+        <span className={`text-7xl font-bold ${tc}`}>{temp}{deg}</span>
       </div>
       <p className={`${tcm} mt-2`}>Feels like {feelsLike}{deg}</p>
-      <div className="flex justify-center gap-4 sm:gap-8 mt-6 text-sm">
+      <div className="flex justify-center gap-8 mt-6 text-sm">
         <div>
           <p className={tcl}>Humidity</p>
           <p className={`text-lg font-medium ${tc}`}>{weather.main.humidity}%</p>

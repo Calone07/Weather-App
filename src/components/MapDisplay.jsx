@@ -26,7 +26,7 @@ export default function MapDisplay({ lat, lon, cityName, theme }) {
         <MapContainer
           center={[lat, lon]}
           zoom={10}
-          className="w-full h-48 sm:h-64"
+          className="w-full h-64"
           zoomControl={false}
         >
           <TileLayer url={tileUrl} attribution={attribution} />
