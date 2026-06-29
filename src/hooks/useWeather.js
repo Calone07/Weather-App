@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react'
 
-const API_KEY = import.meta.env.VITE_OWM_API_KEY
+const API_KEY = import.meta.env.VITE_OWM_API_KEY || '2586f0bd503c207dff69d78d2f3e6d08'
 const BASE = 'https://api.openweathermap.org/data/2.5'
 
 function groupByDay(list) {
