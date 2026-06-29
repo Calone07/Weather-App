@@ -5,6 +5,7 @@ export default function WeatherIcon({ icon, size = 80 }) {
       alt="weather icon"
       width={size}
       height={size}
+      className="max-w-full h-auto"
     />
   )
 }

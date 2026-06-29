@@ -26,7 +26,7 @@ export default function Forecast({ forecast, unit, theme }) {
         <FiCalendar />
         <h3 className="text-lg font-medium">5-Day Forecast</h3>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-5 gap-2 sm:gap-3">
         {forecast.slice(0, 5).map((day) => {
           const hi = unit === 'metric' ? Math.round(day.temp_max) : toF(day.temp_max)
           const lo = unit === 'metric' ? Math.round(day.temp_min) : toF(day.temp_min)

@@ -18,7 +18,7 @@ export default function CityCard({ data, unit, isActive, onSelect, onRemove }) {
   return (
     <div
       onClick={() => onSelect(data.name)}
-      className={`relative flex-shrink-0 w-40 p-3 rounded-xl backdrop-blur cursor-pointer transition border text-left
+      className={`relative flex-shrink-0 w-36 sm:w-40 p-3 rounded-xl backdrop-blur cursor-pointer transition border text-left
         ${isActive
           ? 'bg-white/25 border-white/40 shadow-lg'
           : 'bg-white/10 border-white/10 hover:bg-white/20'
